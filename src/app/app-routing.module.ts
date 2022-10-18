@@ -8,11 +8,13 @@ import { DashboardsComponent } from './Components/dashboards/dashboards.componen
 
 
 const routes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: 'full'},
   { path: 'login', component: LoginComponent },
   { path: 'registrar-usuario', component: RegistrarUsuarioComponent },
   { path: 'verificar-correo', component: VerificarCorreoComponent },
   { path: 'recuperar-password', component: RecuperarPasswordComponent },
-  { path: 'dashboard', component: DashboardsComponent },
+  { path: 'dashboards', component: DashboardsComponent },
+  { path: '**', redirectTo: 'login', pathMatch: 'full'},
 
 
 ];

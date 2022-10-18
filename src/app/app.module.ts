@@ -1,6 +1,8 @@
+//modulos
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+//componentes
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './Components/login/login.component';
@@ -9,6 +11,7 @@ import { RegistrarUsuarioComponent } from './Components/registrar-usuario/regist
 import { VerificarCorreoComponent } from './Components/verificar-correo/verificar-correo.component';
 import { SpinnerComponent } from './Shared/spinner/spinner.component';
 import { RecuperarPasswordComponent } from './Components/recuperar-password/recuperar-password.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { RecuperarPasswordComponent } from './Components/recuperar-password/recu
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

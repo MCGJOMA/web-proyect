@@ -7,7 +7,6 @@ import { LoginComponent } from './Components/login/login.component';
 import { DashboardsComponent } from './Components/dashboards/dashboards.component';
 import { RegistrarUsuarioComponent } from './Components/registrar-usuario/registrar-usuario.component';
 import { VerificarCorreoComponent } from './Components/verificar-correo/verificar-correo.component';
-import { RecuperarCpasswordComponent } from './Components/recuperar-password/recuperar-cpassword.component';
 import { SpinnerComponent } from './Shared/spinner/spinner.component';
 import { RecuperarPasswordComponent } from './Components/recuperar-password/recuperar-password.component';
 
@@ -18,7 +17,7 @@ import { RecuperarPasswordComponent } from './Components/recuperar-password/recu
     DashboardsComponent,
     RegistrarUsuarioComponent,
     VerificarCorreoComponent,
-    RecuperarCpasswordComponent,
+    RecuperarPasswordComponent,
     SpinnerComponent,
     RecuperarPasswordComponent
   ],

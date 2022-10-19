@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
+import { FirebaseErrorService } from 'src/app/services/firebase-error.service';
 
 @Component({
   selector: 'app-recuperar-password',
@@ -6,10 +11,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recuperar-password.component.scss']
 })
 export class RecuperarPasswordComponent implements OnInit {
+  recuperarUsuario: FormGroup;
+  loading: boolean = false
 
-  constructor() { }
+  constructor(
+    private fb: FormBuilder,
+    private afAuth: AngularFireAuth,
+    private toastr: ToastrService,
+    private router: Router,
+    private fireBaseError: FirebaseErrorService) {
+      this.recuperarUsuario = this.fb.group({
+        correo: ['', [Validators.required, Validators.email]],
+      })
+    }
 
   ngOnInit(): void {
+  }
+
+  recuperar(){
+    const email = this.recuperarUsuario.value.correo;
+
+    this.loading = true;
+    this.afAuth.sendPasswordResetEmail(email).then(()=>{
+     this.toastr.info('Le enviamos un correo para reestablecer su contraseña', 'Recuperar password')
+    this.router.navigate(['/login']);
+
+    }).catch((error)=>{
+      this.loading = false;
+      this.toastr.error(this.fireBaseError.codeError(error.code), 'Error');
+    })
   }
 
 }

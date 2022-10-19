@@ -1,6 +1,7 @@
 //modulos
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AngularFireModule } from '@angular/fire/compat';
 
 //componentes
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +13,7 @@ import { VerificarCorreoComponent } from './Components/verificar-correo/verifica
 import { SpinnerComponent } from './Shared/spinner/spinner.component';
 import { RecuperarPasswordComponent } from './Components/recuperar-password/recuperar-password.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

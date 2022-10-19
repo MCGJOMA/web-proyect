@@ -67,6 +67,7 @@ export class RegistrarUsuarioComponent implements OnInit {
           'Le enviamos un correo electronico para su verificacion',
           'Correo enviado!'
         );
+        this.router.navigate(['/login']);
       });
   }
 }

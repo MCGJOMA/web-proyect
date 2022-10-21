@@ -1,24 +1,126 @@
-<div class="container">
-  <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-    <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-    </a>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Proyecto Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
 
-    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-      <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
-      <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
-      <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
-      <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
-    </ul>
-
-    <div class="col-md-3 text-end">
-      <button type="button" class="btn btn-outline-primary me-2" (click)="logout()">Salir</button>
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader" _msthidden="6">
+      <div class="container" _msthidden="6">
+        <div class="row" _msthidden="6">
+          <div class="col-sm-8 col-md-7 py-4" _msthidden="2">
+            <h4 class="text-white" _msthash="1006291" _msttexthash="60892" _msthidden="1">Acerca de</h4>
+            <p class="text-muted" _msthash="963456" _msttexthash="29573219" _msthidden="1">Este es nuestro proyecto de Desarrollo Web, orientado al aprendizaje del FrontEnd. Es un proyecto desarrollado en Angular con conexion a Firebase y MySQL.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4" _msthidden="4">
+            <h4 class="text-white" _msthash="1006499" _msttexthash="94510" _msthidden="1">Contacto</h4>
+            <ul class="list-unstyled" _msthidden="3">
+              <li _msthidden="1"><a href="https://twitter.com/mocinnos" class="text-white" _msthash="1265719" _msttexthash="295321" _msthidden="1">Twitter</a></li>
+              <li _msthidden="1"><a href="https://www.facebook.com/mocinnos" class="text-white" _msthash="1265849" _msttexthash="249184" _msthidden="1">Facebook</a></li>
+              <li _msthidden="1"><a href="https://www.instagram.com/mocinnos/?hl=es" class="text-white" _msthash="1265979" _msttexthash="92131" _msthidden="1">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <strong _msthash="1185288" _msttexthash="71058">Riegos de Guatemala</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Alternar navegación" _mstaria-label="420485">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
     </div>
   </header>
-  <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-    <h1 class="display-4 fw-normal">Bienvenido</h1>
-    <p class="fs-5 text-muted">{{ dataUser?.email }}</p>
-  </div>
-</div>
 
+  <main>
+
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light" _msthash="1198730" _msttexthash="283647">Riegos de Guatemala</h1>
+          <p class="lead text-muted" _msthash="1151670" _msttexthash="16889431">Deseamos ayudar a evitar el uso excesivo de agua en cultivos del país creando un sistema de riego inteligente y ofrecerlo a agricultores, el cual eliminaría la necesidad de que un agente humano tenga que estar constantemente abriendo las llaves del suministro de agua en el cultivo, aplicando la apertura de llaves de paso de forma automática en el momento que la planta necesita el agua ahorrando así el desperdicio de la misma y costos para el agricultor.</p>
+          <p>
+            <a href="#" class="btn btn-primary my-2" style="margin-right:10px ;" _msthash="1360541" _msttexthash="690599">Principal llamado a la acción</a>
+            <a href="#" class="btn btn-secondary my-2" _msthash="1360658" _msttexthash="332527">Acción secundaria</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="../../../assets/img/manguera.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false" _mstaria-label="809640"><title _mstHash="1686555" _mstTextHash="112281">Marcador</title>
+
+              <div class="card-body">
+                <p class="card-text" _msthash="1937507" _msttexthash="13007995">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right: 5px;" _msthash="3235427" _msttexthash="61152">Vista</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" _msthash="3235609" _msttexthash="75699">Editar</button>
+                  </div>
+                  <small class="text-muted" _msthash="2661984" _msttexthash="117624">9 minutos</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="../../../assets/img/sensor de humedad.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false" _mstaria-label="809640"><title _mstHash="1686854" _mstTextHash="112281">Marcador</title>
+
+              <div class="card-body">
+                <p class="card-text" _msthash="1937858" _msttexthash="13007995">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right: 5px;" _msthash="3235999" _msttexthash="61152">Vista</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" _msthash="3236181" _msttexthash="75699">Editar</button>
+                  </div>
+                  <small class="text-muted" _msthash="2662465" _msttexthash="117624">9 minutos</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="../../../assets/img/sensor de riego.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false" _mstaria-label="809640"><title _mstHash="1687153" _mstTextHash="112281">Marcador</title>
+
+              <div class="card-body">
+                <p class="card-text" _msthash="1938209" _msttexthash="13007995">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-right: 5px;" _msthash="3236571" _msttexthash="61152">Vista</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" _msthash="3236753" _msttexthash="75699">Editar</button>
+                  </div>
+                  <small class="text-muted" _msthash="2662946" _msttexthash="117624">9 minutos</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="mb-1" _msthash="538707" _msttexthash="3795493">Proyecto de Desarrollo Web</p>
+      <p class="mb-0" _msthash="538824" _msttexthash="4236349">Emmanuel Contreras - Alejandro Bautista - Jose Juarez</p>
+    </div>
+  </footer>
+
+      <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

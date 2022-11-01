@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Proyecto Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader" _msthidden="6">
+      <div class="container" _msthidden="6">
+        <div class="row" _msthidden="6">
+          <div class="col-sm-8 col-md-7 py-4" _msthidden="2">
+            <h4 class="text-white" _msthash="1006291" _msttexthash="60892" _msthidden="1">Acerca de</h4>
+            <p class="text-muted" _msthash="963456" _msttexthash="29573219" _msthidden="1">Este es nuestro proyecto de Desarrollo Web, orientado al aprendizaje del FrontEnd. Es un proyecto desarrollado en Angular con conexion a Firebase y MySQL.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4" _msthidden="4">
+            <h4 class="text-white" _msthash="1006499" _msttexthash="94510" _msthidden="1">Contacto</h4>
+            <ul class="list-unstyled" _msthidden="3">
+              <li _msthidden="1"><a href="https://twitter.com/mocinnos" class="text-white" _msthash="1265719" _msttexthash="295321" _msthidden="1">Twitter</a></li>
+              <li _msthidden="1"><a href="https://www.facebook.com/mocinnos" class="text-white" _msthash="1265849" _msttexthash="249184" _msthidden="1">Facebook</a></li>
+              <li _msthidden="1"><a href="https://www.instagram.com/mocinnos/?hl=es" class="text-white" _msthash="1265979" _msttexthash="92131" _msthidden="1">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm" style="margin-bottom: 10px;">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center">
+          <strong onclick="window.location.href='/dashboards2'" _msthash="1185288" _msttexthash="71058">Riegos de Guatemala</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Alternar navegación" _mstaria-label="420485">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <table class="table table-sm table-dark">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">ID DEL SENSOR</th>
+          <th scope="col">FECHA Y HORA</th>
+          <th scope="col">TEMPERATURA REGISTRADA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let datos of datos">
+          <td>{{datos.id}}</td>
+          <td>{{datos.id_sensor}}</td>
+          <td>{{datos.fecha_hora}}</td>
+          <td>{{datos.temp_registrada + "°C"}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>

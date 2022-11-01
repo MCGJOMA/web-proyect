@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AngularFireModule } from '@angular/fire/compat';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { HttpClientModule } from '@angular/common/http'
 
 //componentes
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +19,13 @@ import { SpinnerComponent } from './Shared/spinner/spinner.component';
 import { RecuperarPasswordComponent } from './Components/recuperar-password/recuperar-password.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
+import { ManguerasComponent } from './Components/mangueras/mangueras.component';
+import { RegistroManguerasComponent } from './Components/registro-mangueras/registro-mangueras.component';
+import { HumedadComponent } from './Components/humedad/humedad.component';
+import { RegistroHumedadComponent } from './Components/registro-humedad/registro-humedad.component';
+import { TemperaturaComponent } from './Components/temperatura/temperatura.component';
+import { RegistroTemperaturaComponent } from './Components/registro-temperatura/registro-temperatura.component';
+import { Dashboards2Component } from './Components/dashboards2/dashboards2.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +36,14 @@ import { environment } from 'src/environments/environment';
     VerificarCorreoComponent,
     RecuperarPasswordComponent,
     SpinnerComponent,
-    RecuperarPasswordComponent
+    RecuperarPasswordComponent,
+    ManguerasComponent,
+    RegistroManguerasComponent,
+    HumedadComponent,
+    RegistroHumedadComponent,
+    TemperaturaComponent,
+    RegistroTemperaturaComponent,
+    Dashboards2Component
   ],
   imports: [
     BrowserModule,
@@ -37,6 +52,7 @@ import { environment } from 'src/environments/environment';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboards2.component.scss']
 })
 export class Dashboards2Component implements OnInit {
+  user: any;
+  constructor() {
 
-  constructor() { }
+   }
 
   ngOnInit(): void {
+    this.user = localStorage.getItem('usuario')
   }
 
 }

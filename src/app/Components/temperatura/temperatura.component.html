@@ -16,7 +16,7 @@
         <div class="row" _msthidden="6">
           <div class="col-sm-8 col-md-7 py-4" _msthidden="2">
             <h4 class="text-white" _msthash="1006291" _msttexthash="60892" _msthidden="1">Acerca de</h4>
-            <p class="text-muted" _msthash="963456" _msttexthash="29573219" _msthidden="1">Este es nuestro proyecto de Desarrollo Web, orientado al aprendizaje del FrontEnd. Es un proyecto desarrollado en Angular con conexion a Firebase y MySQL.</p>
+            <p class="text-muted" _msthash="963456" _msttexthash="29573219" _msthidden="1">Este es nuestro proyecto de Ingenieria de software, orientado al aprendizaje del FrontEnd. Es un proyecto desarrollado en Angular con conexion a Firebase y MySQL.</p>
           </div>
           <div class="col-sm-4 offset-md-1 py-4" _msthidden="4">
             <h4 class="text-white" _msthash="1006499" _msttexthash="94510" _msthidden="1">Contacto</h4>
@@ -32,7 +32,7 @@
     <div class="navbar navbar-dark bg-dark shadow-sm" style="margin-bottom: 10px;">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center">
-          <strong onclick="window.location.href='/dashboards2'" _msthash="1185288" _msttexthash="71058">Riegos de Guatemala</strong>
+          <strong onclick="window.location.href='/dashboards2'" _msthash="1185288" _msttexthash="71058">Mis notas</strong>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Alternar navegación" _mstaria-label="420485">
           <span class="navbar-toggler-icon"></span>
@@ -42,22 +42,11 @@
   </header>
 
   <body>
-    <table class="table table-sm table-dark">
-      <thead>
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">MODELO</th>
-          <th scope="col">UBICACIÓN</th>
-          <th scope="col">ESTADO</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let datos of datos">
-          <td>{{datos.id}}</td>
-          <td>{{datos.modelo}}</td>
-          <td>{{datos.ubicacion}}</td>
-          <td>{{datos.estado}}</td>
-        </tr>
-      </tbody>
-    </table>
+    <section>
+      <h2>Mis Calificaciones</h2>
+      <ul id="calificacionesList">
+          <!-- La lista de calificaciones se generará dinámicamente con JavaScript -->
+      </ul>
+  </section>
+
   </body>

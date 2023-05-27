@@ -16,7 +16,8 @@
         <div class="row" _msthidden="6">
           <div class="col-sm-8 col-md-7 py-4" _msthidden="2">
             <h4 class="text-white" _msthash="1006291" _msttexthash="60892" _msthidden="1">Acerca de</h4>
-            <p class="text-muted" _msthash="963456" _msttexthash="29573219" _msthidden="1">Este es nuestro proyecto de Desarrollo Web, orientado al aprendizaje del FrontEnd. Es un proyecto desarrollado en Angular con conexion a Firebase y MySQL.</p>
+            <p class="text-muted" _msthash="963456" _msttexthash="29573219" _msthidden="1">Este es nuestro proyecto de Ingenieria de software, orientado al aprendizaje del FrontEnd. 
+              Es un proyecto desarrollado en Angular con conexion a Firebase y MySQL.</p>
           </div>
           <div class="col-sm-4 offset-md-1 py-4" _msthidden="4">
             <h4 class="text-white" _msthash="1006499" _msttexthash="94510" _msthidden="1">Contacto</h4>
@@ -32,7 +33,7 @@
     <div class="navbar navbar-dark bg-dark shadow-sm">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center">
-          <strong _msthash="1185288" _msttexthash="71058">Riegos de Guatemala</strong>
+          <strong _msthash="1185288" _msttexthash="71058">Bienvenido, {{user}}</strong>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Alternar navegación" _mstaria-label="420485">
           <span class="navbar-toggler-icon"></span>
@@ -46,8 +47,8 @@
     <section class="py-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light" _msthash="1198730" _msttexthash="283647">Riegos de Guatemala</h1>
-          <p class="lead text-muted" _msthash="1151670" _msttexthash="16889431">Deseamos ayudar a evitar el uso excesivo de agua en cultivos del país creando un sistema de riego inteligente y ofrecerlo a agricultores, el cual eliminaría la necesidad de que un agente humano tenga que estar constantemente abriendo las llaves del suministro de agua en el cultivo, aplicando la apertura de llaves de paso de forma automática en el momento que la planta necesita el agua ahorrando así el desperdicio de la misma y costos para el agricultor.</p>
+          <h1 class="fw-light" _msthash="1198730" _msttexthash="283647">Pagina de inicio</h1>
+          <p class="lead text-muted" _msthash="1151670" _msttexthash="16889431">Desde esta pagina podras gestionar toda la informacion relacionada a tu usuario, podras ver tus clases, notas y tareas asignadas.</p>
         </div>
       </div>
     </section>
@@ -58,14 +59,13 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
             <div class="card shadow-sm">
-              <img src="../../../assets/img/manguera.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false" _mstaria-label="809640"><title _mstHash="1686555" _mstTextHash="112281">Marcador</title>
+              <img src="../../../assets/img/Clases.png" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false" _mstaria-label="809640"><title _mstHash="1686555" _mstTextHash="112281">Marcador</title>
 
               <div class="card-body">
-                <p class="card-text" _msthash="1937507" _msttexthash="13007995">En este apartado podra encontrar informacion acerca de las manguera registradas en el sistema, el tiempo que estuvieron activas, consumo total de agua y fecha y hora. </p>
+                <p class="card-text" _msthash="1937507" _msttexthash="13007995">En este apartado podra encontrar todas las clases que estan asociadas a su usuario </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button onclick="window.location.href='/mangueras'" type="button" class="btn btn-sm btn-outline-secondary" style="margin-right: 5px;" _msthash="3235427" _msttexthash="61152">Mangueras</button>
-                    <button onclick="window.location.href='/registro-mangueras'" type="button" class="btn btn-sm btn-outline-secondary" _msthash="3235609" _msttexthash="75699">Registro de mangueras</button>
+                    <button onclick="window.location.href='/mangueras'" type="button" class="btn btn-sm btn-outline-secondary" style="margin-right: 5px;" _msthash="3235427" _msttexthash="61152">Mis clases</button>
                   </div>
                   <small class="text-muted" _msthash="2661984" _msttexthash="117624">9 minutos</small>
                 </div>
@@ -74,14 +74,13 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img src="../../../assets/img/sensor de humedad.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false" _mstaria-label="809640"><title _mstHash="1686854" _mstTextHash="112281">Marcador</title>
+              <img src="../../../assets/img/tareas.jpeg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false" _mstaria-label="809640"><title _mstHash="1686854" _mstTextHash="112281">Marcador</title>
 
               <div class="card-body">
-                <p class="card-text" _msthash="1937858" _msttexthash="13007995">En este apartado podra encontrar informacion acerca de los sensores de humedad registrados en el sistema, tambien podra visualizar informacion de cada sensor que elija.</p>
+                <p class="card-text" _msthash="1937858" _msttexthash="13007995"> En este apartado podra encontrar todo lo relacionado a las tareas asignadas por su catedratico.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button onclick="window.location.href='/humedad'" type="button" class="btn btn-sm btn-outline-secondary" style="margin-right: 5px;" _msthash="3235999" _msttexthash="61152">Sensores</button>
-                    <button onclick="window.location.href='/registro-humedad'" type="button" class="btn btn-sm btn-outline-secondary" _msthash="3236181" _msttexthash="75699">Registro de humedad</button>
+                    <button onclick="window.location.href='/humedad'" type="button" class="btn btn-sm btn-outline-secondary" style="margin-right: 5px;" _msthash="3235999" _msttexthash="61152">Mis tareas</button>
                   </div>
                   <small class="text-muted" _msthash="2662465" _msttexthash="117624">9 minutos</small>
                 </div>
@@ -90,14 +89,13 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img src="../../../assets/img/sensor de riego.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false" _mstaria-label="809640"><title _mstHash="1687153" _mstTextHash="112281">Marcador</title>
+              <img src="../../../assets/img/NOTAS.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false" _mstaria-label="809640"><title _mstHash="1687153" _mstTextHash="112281">Marcador</title>
 
               <div class="card-body">
-                <p class="card-text" _msthash="1938209" _msttexthash="13007995">En este apartado podra encontrar informacion acerca de los sensores de temperatura registrados en el sistema, tambien podra visualizar informacion de cada sensor.</p>
+                <p class="card-text" _msthash="1938209" _msttexthash="13007995">En este apartado podra encontrar todas las notas que se vayan publicando en sus distintas clases.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button onclick="window.location.href='/temperatura'" type="button" class="btn btn-sm btn-outline-secondary" style="margin-right: 5px;" _msthash="3236571" _msttexthash="61152">Sensores</button>
-                    <button onclick="window.location.href='/registro-temperatura'" type="button" class="btn btn-sm btn-outline-secondary" _msthash="3236753" _msttexthash="75699">Registro de temperatura</button>
+                    <button onclick="window.location.href='/temperatura'" type="button" class="btn btn-sm btn-outline-secondary" style="margin-right: 5px;" _msthash="3236571" _msttexthash="61152">Mis notas</button>
                   </div>
                   <small class="text-muted" _msthash="2662946" _msttexthash="117624">9 minutos</small>
                 </div>
@@ -112,8 +110,8 @@
 
   <footer class="text-muted py-5">
     <div class="container">
-      <p class="mb-1" _msthash="538707" _msttexthash="3795493">Proyecto de Desarrollo Web</p>
-      <p class="mb-0" _msthash="538824" _msttexthash="4236349">Emmanuel Contreras - Alejandro Bautista - Jose Juarez</p>
+      <p class="mb-1" _msthash="538707" _msttexthash="3795493">Proyecto de IDS</p>
+      <p class="mb-0" _msthash="538824" _msttexthash="4236349">Grupo 1</p>
     </div>
   </footer>
 
